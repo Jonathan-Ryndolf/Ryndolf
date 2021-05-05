@@ -13,56 +13,6 @@
 # General
 --------------------------------------------------------------*/
 
-.dot-flashing {
-  position: relative;
-  width: 10px;
-  height: 10px;
-  border-radius: 5px;
-  background-color: #00c5db;
-  color: #00c5db;
-  animation: dotFlashing 1s infinite linear alternate;
-  animation-delay: .5s;
-}
-
-.dot-flashing::before, .dot-flashing::after {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  top: 0;
-}
-
-.dot-flashing::before {
-  left: -15px;
-  width: 10px;
-  height: 10px;
-  border-radius: 5px;
-  background-color: #00c5db;
-  color: #00c5db;
-  animation: dotFlashing 1s infinite alternate;
-  animation-delay: 0s;
-}
-
-.dot-flashing::after {
-  left: 15px;
-  width: 10px;
-  height: 10px;
-  border-radius: 5px;
-  background-color: #00c5db;
-  color: #00c5db;
-  animation: dotFlashing 1s infinite alternate;
-  animation-delay: 1s;
-}
-
-@keyframes dotFlashing {
-  0% {
-    background-color: #00c5db;
-  }
-  50%,
-  100% {
-    background-color: #ebe6ff;
-  }
-}
-
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -468,6 +418,56 @@ h1, h2, h3, h4, h5, h6 {
 #hero .btn-get-started:hover {
   background: #00c5db;
   border: 2px solid #00c5db;
+}
+
+.dot-flashing {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #00c5db;
+  color: #00c5db;
+  animation: dotFlashing 0.5s infinite linear alternate;
+  animation-delay: 0.25s;
+}
+
+.dot-flashing::before, .dot-flashing::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+
+.dot-flashing::before {
+  left: -15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #00c5db;
+  color: #00c5db;
+  animation: dotFlashing 0.5s infinite alternate;
+  animation-delay: 0s;
+}
+
+.dot-flashing::after {
+  left: 15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #00c5db;
+  color: #00c5db;
+  animation: dotFlashing 0.5s infinite alternate;
+  animation-delay: 0.5s;
+}
+
+@keyframes dotFlashing {
+  0% {
+    background-color: #00c5db;
+  }
+  50%,
+  100% {
+    background-color: #ebe6ff;
+  }
 }
 
 @media (min-width: 1024px) {
