@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+  }
+
+.btn {
+  margin: 0;
+  position: absolute;
+  top: 39%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 80px;
+  height: 25px;
+  background-color: rgba(0, 255, 255, 0);
+}
+  
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.btn:hover .big{
+  width: 600px;
+  height: 100px;
+}
+
+.btn:hover .border{
+  width: 580px;
+  height: 80px;
+  border: 3px solid #8f8f8f;
+  background-color: rgba(0, 255, 255, 0.10);
+}
+
+.btn:hover .small{
+  background-color: rgb(187, 187, 187);
+}
+
+.big {
+  width: 20px;
+  height: 20px;
+  transition: width 1s, height 1s;
+  position: relative;
+}
+
+.border {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  transition: width 1s, height 1s;
+  z-index: 1;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+  
+.small {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  transition: width 1s, height 1s;
+  z-index: 2;
+}
+
+.one {
+  top: 0;
+  left: 0;
+}
+
+.two {
+  top: 0;
+  right: 0;
+}
+
+.three {
+  bottom: 0;
+  left: 0;
+}
+
+.four {
+  bottom: 0;
+  right: 0;
+}
