@@ -5,7 +5,7 @@
 .center {
   margin: 0;
   position: absolute;
-  top: 39%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   pointer-events: none;
@@ -13,8 +13,8 @@
 }
 
 .big {
-  width: 20px;
-  height: 20px;
+  width: 0px;
+  height: 0px;
   transition: width 1s, height 1s;
   position: relative;
 }
