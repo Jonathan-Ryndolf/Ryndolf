@@ -15,8 +15,21 @@ $(function () {
       $(".big").css("height", "0px");
       $(".outline").css("width", "0px");
       $(".outline").css("height", "0px");
-      $(".outline").css("border", "");
-      $(".small").css("background-color", "");
+      $(".outline").css("border", "0px solid #59595900");
+      $(".outline").css("background-color", "#00c5db2300");
+      $(".small").css("background-color", "#00c5db00");
+    }
+  );
+});
+
+$(function () {
+  $("#developer").hover(
+    function () {
+      $("#code").css("-webkit-mask-image", "radial-gradient(ellipse 50% 100% at 58% 58%, black 50%, transparent 80%)");
+    },
+    function () {
+      // on mouseout, reset the background colour
+      $("#code").css("-webkit-mask-image", "radial-gradient(ellipse 0% 0% at 58% 58%, black 50%, transparent 80%)");
     }
   );
 });

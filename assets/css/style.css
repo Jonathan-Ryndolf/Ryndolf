@@ -2,6 +2,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
+@supports(-webkit-mask-image: url(#mask)) or (mask-image: url(#mask)) {
+  /* code that requires mask-image here. */
+}
+
 /**
 * Template Name: Tempo - v2.2.1
 * Template URL: https://bootstrapmade.com/tempo-free-onepage-bootstrap-theme/
@@ -394,6 +398,16 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
+#code {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/code-bg.jpg") top center;
+  -webkit-mask-image: radial-gradient(ellipse 0% 0% at 58% 58%, black 50%, transparent 80%);
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+}
+
 #hero:before {
   content: "";
   background: rgba(0, 0, 0, 0.6);
@@ -446,6 +460,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #eee;
   margin-bottom: 40px;
   font-size: 24px;
+  z-index: 1;
 }
 
 #hero h2 span {
@@ -464,6 +479,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.5s;
   border: 2px solid #fff;
   color: #fff;
+  z-index: 1;
 }
 
 #hero .btn-get-started:hover {
