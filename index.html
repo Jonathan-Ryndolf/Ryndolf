@@ -35,6 +35,7 @@
 </head>
 
 <body>
+  <div class="loading"></div>
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
@@ -60,7 +61,7 @@
 
   <!-- ======= Hero Section ======= -->
 
-  <div class="center">
+  <div class="center d-none d-md-block">
     <div class="big">
       <div class="outline"></div>
       <div class="small one"></div>
@@ -69,13 +70,40 @@
       <div class="small four"></div>
     </div>
   </div>
-  <div id="shadow"></div>
-  <div id="code"></div>
+  
+<div class="colors col d-none d-md-block" style="position: absolute; z-index: 1; top: 32%;">
+  <div id="color1" class="icon-box">
+    <div class="padding-icon"><div class="colorbox" style="background-color: #00c5db;"></div></div>
+    <h3><a href="">#00c5db</a></h3>
+  </div>
+  <div id="color2" class="icon-box">
+    <div class="padding-icon"><div class="colorbox" style="background-color: #d8fbff;"></div></div>
+    <h3><a href="">#d8fbff</a></h3>
+  </div>
+  <div id="color3" class="icon-box">
+    <div class="padding-icon"><div class="colorbox" style="background-color: #ffffff;"></div></div>
+    <h3><a href="">#ffffff</a></h3>
+  </div>
+  <div id="color4" class="icon-box">
+    <div class="padding-icon"><div class="colorbox" style="background-color: #493c3e;"></div></div>
+    <h3><a href="">#493c3e</a></h3>
+  </div>
+  <div id="color5" class="icon-box">
+    <div class="padding-icon"><div class="colorbox" style="background-color: #000000;"></div></div>
+    <h3><a href="">#000000</a></h3>
+  </div>
+</div>
+
+  <div class="codevisible d-none d-md-block">
+    <div id="code"></div>
+  </div>
   <section id="hero">
     <div class="hero-container">
       <h1 class="pb-3">Jonathan <span>Ryndolf</span></h1>
       <h2>
-        <span id="doctor" class="badge rounded-pill badgecolor p-2 pl-3 pr-3">Doctor</span>
+        <span id="doctor" class="badge rounded-pill badgecolor p-2 pl-3 pr-3"
+          >Doctor</span
+        >
         <span id="designer" class="badge rounded-pill badgecolor p-2 pl-3 pr-3"
           >Designer</span
         >
@@ -177,9 +205,7 @@
             </div>
             <div class="resume-item">
               <p>
-                <em
-                  >Photo Touchups</em
-                >
+                <em>Photo Touchups</em>
               </p>
             </div>
           </div>
@@ -198,6 +224,8 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/venobox/venobox.min.js"></script>
   <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>

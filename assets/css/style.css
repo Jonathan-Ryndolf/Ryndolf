@@ -17,6 +17,18 @@
 # General
 --------------------------------------------------------------*/
 
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(https://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif) center no-repeat #fff;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -398,22 +410,6 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
-#shadow {
-  position: absolute;
-  top: 50%;
-  left: 55%;
-  transform: translate(-50%, -50%);
-  width: 840px;
-  height: 840px;
-  transition: 1s;
-  transition-delay: 1s;
-  z-index: 2;
-  box-shadow: inset 0 0 50px #000000;
-  border-radius: 50%;
-  pointer-events: none;
-  opacity: 0;
-}
-
 #code {
   width: 100%;
   height: 100vh;
@@ -480,8 +476,16 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1;
 }
 
-#hero h2 span {
-  cursor:pointer;
+#doctor {
+  cursor: pointer;
+}
+
+#designer {
+  cursor: move;
+}
+
+#developer {
+  cursor: text;
 }
 
 #hero .btn-get-started {
@@ -790,48 +794,48 @@ section {
 # Features
 --------------------------------------------------------------*/
 
-.features .icon-box .padding-icon {
+#color1, #color2, #color3, #color4, #color5 {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.icon-box .padding-icon {
   padding-right: 10px;
 }
 
-.features .icon-box img {
+.icon-box .colorbox {
   width: 32px;
   height: 32px;
+  border-radius: 10px;
 }
 
 .features {
   padding-top: 0;
 }
 
-.features .icon-box {
+.icon-box {
   display: flex;
   align-items: center;
-  padding: 20px;
-  transition: ease-in-out 0.3s;
-  box-shadow: 2px 0 35px 0 rgba(68, 88, 144, 0.12);
+  padding-bottom: 20px;
 }
 
-.features .icon-box i {
+.icon-box i {
   font-size: 32px;
   padding-right: 10px;
   line-height: 1;
 }
 
-.features .icon-box h3 {
-  font-weight: 700;
+.icon-box h3 {
+  font-weight: 500;
   margin: 0;
   padding: 0;
   line-height: 1;
   font-size: 16px;
 }
 
-.features .icon-box h3 a {
-  color: #493c3e;
+.icon-box h3 a {
+  color: #ffffff;
   transition: ease-in-out 0.3s;
-}
-
-.features .icon-box:hover a {
-  color: #00c5db;
 }
 
 /*--------------------------------------------------------------

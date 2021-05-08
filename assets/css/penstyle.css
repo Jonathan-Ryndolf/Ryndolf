@@ -12,18 +12,20 @@
   z-index: 1;
 }
 
+.big, .outline, .small {
+  transition: width 0s, height 1s;
+}
+
 .big {
-  width: 0px;
+  width: 600px;
   height: 0px;
-  transition: width 1s, height 1s;
   position: relative;
 }
 
 .outline {
   position: absolute;
-  width: 0px;
+  width: 585px;
   height: 0px;
-  transition: width 1s, height 1s;
   z-index: 1;
   margin: 0;
   position: absolute;
@@ -36,8 +38,10 @@
   position: absolute;
   width: 15px;
   height: 15px;
-  transition: width 1s, height 1s;
+  background-color: #00c5db;
   z-index: 2;
+  opacity: 0;
+  transition: opacity 1s;
 }
 
 .one {
