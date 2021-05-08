@@ -26,10 +26,16 @@ $(function () {
   $("#developer").hover(
     function () {
       $("#code").css("clip-path", "circle(40% at 55% 50%)");
+      $("#shadow").css("opacity", "1");
+      $("#shadow").css("transition", "1s");
+      $("#shadow").css("transition-delay", "1s");
     },
     function () {
       // on mouseout, reset the background colour
       $("#code").css("clip-path", "circle(0% at 55% 50%)");
+      $("#shadow").css("opacity", "0");
+      $("#shadow").css("transition", "0s");
+      $("#shadow").css("transition-delay", "0s");
     }
   );
 });
