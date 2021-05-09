@@ -465,9 +465,14 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 15px;
 }
 
-.reder {color: rgb(246, 59, 59);}
+.reder {
+  color: rgb(246, 59, 59);
+}
 
-.greener {color: #00ce1b;}
+.greener {
+  color: #00ce1b;
+  /* text-shadow: 0 0 0.70em #9cff8a; */
+}
 
 .grad {
   background: linear-gradient(to right, #00ff6a, #00d9ff);
