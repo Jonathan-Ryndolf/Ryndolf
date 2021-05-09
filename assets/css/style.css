@@ -2,7 +2,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
-@supports(-webkit-mask-image: url(#mask)) or (mask-image: url(#mask)) {
+@supports (-webkit-mask-image: url(#mask)) or (mask-image: url(#mask)) {
   /* code that requires mask-image here. */
 }
 
@@ -31,7 +31,12 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: Montserrat;
 }
 
@@ -91,13 +96,15 @@ h1, h2, h3, h4, h5, h6 {
   max-height: 40px;
 }
 
-#header.header-scrolled, #header.header-inner-pages {
+#header.header-scrolled,
+#header.header-inner-pages {
   background: #fff;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 12px 0;
 }
 
-#header.header-scrolled .logo a, #header.header-inner-pages .logo a {
+#header.header-scrolled .logo a,
+#header.header-inner-pages .logo a {
   color: #493c3e;
 }
 
@@ -175,7 +182,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #493c3e;
 }
 
-.nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
+.nav-menu .drop-down ul a:hover,
+.nav-menu .drop-down ul .active > a,
+.nav-menu .drop-down ul li:hover > a {
   color: #00c5db;
 }
 
@@ -207,7 +216,8 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
 }
 
-.header-scrolled .nav-menu > ul > li > a, .header-inner-pages .nav-menu > ul > li > a {
+.header-scrolled .nav-menu > ul > li > a,
+.header-inner-pages .nav-menu > ul > li > a {
   color: #493c3e;
 }
 
@@ -274,7 +284,9 @@ h1, h2, h3, h4, h5, h6 {
   outline: none;
 }
 
-.mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
+.mobile-nav a:hover,
+.mobile-nav .active > a,
+.mobile-nav li:hover > a {
   color: #00c5db;
   text-decoration: none;
 }
@@ -330,8 +342,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-
-
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -347,8 +357,9 @@ h1, h2, h3, h4, h5, h6 {
   animation-delay: 0.25s;
 }
 
-.dot-flashing::before, .dot-flashing::after {
-  content: '';
+.dot-flashing::before,
+.dot-flashing::after {
+  content: "";
   display: inline-block;
   position: absolute;
   top: 0;
@@ -526,7 +537,7 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
-section {
+.section {
   padding: 30px 0;
 }
 
@@ -572,23 +583,6 @@ section {
   .section-title p {
     width: 50%;
   }
-}
-
-.logos img {
-  width: 60px;
-  height: 60px;
-  margin: 20px;
-}
-
-.logos {
-  margin-right: 40px;
-  margin-bottom: 30px;
-  border-radius: 50%;
-  transition: background-color .5s;
-}
-
-.logos:hover {
-  background-color: #00c5db56;
 }
 
 /*--------------------------------------------------------------
@@ -714,140 +708,59 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Services
+# Skills
 --------------------------------------------------------------*/
 
-.services .icon-box .padding-icon {
-  padding-bottom: 50px;
-}
-
-.services .icon-box img {
-  width: 48px;
-  height: 48px;
-}
-
-.services {
-  padding-bottom: 30px;
-}
-
-.services .icon-box {
-  padding: 60px 30px;
-  position: relative;
-  overflow: hidden;
-  background: #fff;
-  box-shadow: 2px 0 35px 0 rgba(68, 88, 144, 0.12);
-  transition: all 0.3s ease-in-out;
-  border-radius: 8px;
-  z-index: 1;
-  text-align: center;
-}
-
-.services .icon-box::before {
-  content: '';
-  position: absolute;
-  background: #d8fbff;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  top: 100%;
-  transition: all 0.4s;
-  z-index: -1;
-}
-
-.services .icon-box:hover::before {
-  background: #00c5db;
-  top: 0;
-  border-radius: 0px;
-}
-
-.services .icon {
-  margin-bottom: 15px;
-}
-
-.services .icon i {
-  font-size: 48px;
-  line-height: 1;
-  color: #00c5db;
-  transition: all 0.3s ease-in-out;
-}
-
-.services .title {
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
-}
-
-.services .title a {
-  color: #111;
-}
-
-.services .description {
-  font-size: 15px;
-  line-height: 28px;
-  margin-bottom: 0;
-}
-
-.services .icon-box:hover .title a, .services .icon-box:hover .description {
-  color: #fff;
-}
-
-.services .icon-box:hover .icon i {
-  color: #fff;
-}
-
-/*--------------------------------------------------------------
-# Features
---------------------------------------------------------------*/
-
-#color1, #color2, #color3, #color4, #color5 {
-  opacity: 0;
-  transition: opacity 1s;
-}
-
-.icon-box .padding-icon {
+.skills .icon-box .padding-icon {
   padding-right: 10px;
 }
 
-.icon-box .colorbox {
+.skills .icon-box img {
   width: 32px;
   height: 32px;
-  border-radius: 10px;
 }
 
-.features {
+.skills {
   padding-top: 0;
 }
 
-.icon-box {
+.skills .icon-box {
   display: flex;
   align-items: center;
-  padding-bottom: 20px;
+  padding: 20px;
+  transition: ease-in-out 0.3s;
+  box-shadow: 2px 0 35px 0 rgba(68, 88, 144, 0.12);
 }
 
-.icon-box i {
+.skills .icon-box i {
   font-size: 32px;
   padding-right: 10px;
   line-height: 1;
 }
 
-.icon-box h3 {
-  font-weight: 500;
+.skills .icon-box h3 {
+  font-weight: 700;
   margin: 0;
   padding: 0;
   line-height: 1;
   font-size: 16px;
 }
 
-.icon-box h3 a {
-  color: #ffffff;
+.skills .icon-box h3 a {
+  color: #493c3e;
   transition: ease-in-out 0.3s;
+}
+
+.skills .icon-box:hover a {
+  color: #00c5db;
 }
 
 /*--------------------------------------------------------------
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.8)), url("../img/cta-bg.jpg") center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.8)),
+    url("../img/cta-bg.jpg") center center;
   background-size: cover;
   padding: 60px 0;
 }
@@ -913,7 +826,8 @@ section {
   border-radius: 50px;
 }
 
-.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active {
   color: #fff;
   background: #00c5db;
 }
@@ -957,7 +871,8 @@ section {
   margin-bottom: 0;
 }
 
-.portfolio .portfolio-item .portfolio-info .preview-link, .portfolio .portfolio-item .portfolio-info .details-link {
+.portfolio .portfolio-item .portfolio-info .preview-link,
+.portfolio .portfolio-item .portfolio-info .details-link {
   position: absolute;
   right: 50px;
   font-size: 24px;
@@ -966,7 +881,8 @@ section {
   transition: ease-in-out 0.3s;
 }
 
-.portfolio .portfolio-item .portfolio-info .preview-link:hover, .portfolio .portfolio-item .portfolio-info .details-link:hover {
+.portfolio .portfolio-item .portfolio-info .preview-link:hover,
+.portfolio .portfolio-item .portfolio-info .details-link:hover {
   color: #f7c2cc;
 }
 
@@ -1281,11 +1197,14 @@ section {
   color: #816a6e;
 }
 
-.contact .info .email, .contact .info .phone {
+.contact .info .email,
+.contact .info .phone {
   margin-top: 40px;
 }
 
-.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+.contact .info .email:hover i,
+.contact .info .address:hover i,
+.contact .info .phone:hover i {
   background: #00c5db;
   color: #fff;
 }
@@ -1349,13 +1268,15 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-formm input, .contact .php-email-formm textarea {
+.contact .php-email-formm input,
+.contact .php-email-formm textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
 }
 
-.contact .php-email-formm input:focus, .contact .php-email-formm textarea:focus {
+.contact .php-email-formm input:focus,
+.contact .php-email-formm textarea:focus {
   border-color: #00c5db;
 }
 
@@ -1454,7 +1375,8 @@ section {
   z-index: 1;
 }
 
-.portfolio-details .portfolio-details-carousel .owl-nav, .portfolio-details .portfolio-details-carousel .owl-dots {
+.portfolio-details .portfolio-details-carousel .owl-nav,
+.portfolio-details .portfolio-details-carousel .owl-dots {
   margin-top: 5px;
   text-align: left;
 }
@@ -1656,7 +1578,7 @@ section {
 }
 
 .blog .entry .entry-content blockquote::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -1896,12 +1818,14 @@ section {
   display: inline-block;
 }
 
-.blog .blog-pagination li.active, .blog .blog-pagination li:hover {
+.blog .blog-pagination li.active,
+.blog .blog-pagination li:hover {
   background: #00c5db;
   border: 1px solid #00c5db;
 }
 
-.blog .blog-pagination li.active a, .blog .blog-pagination li:hover a {
+.blog .blog-pagination li.active a,
+.blog .blog-pagination li:hover a {
   color: #fff;
 }
 
