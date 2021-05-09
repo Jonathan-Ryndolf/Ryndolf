@@ -41,3 +41,48 @@ $(function () {
     }
   );
 });
+
+$(function () {
+  $("#doctor").hover(
+    function () {
+      $("#doc").css("clip-path", "circle(30% at 45% 50%)");
+    },
+    function () {
+      // on mouseout, reset the background colour
+      $("#doc").css("clip-path", "circle(0% at 45% 50%)");
+    }
+  );
+});
+
+$(document).ready(function () {
+  $("#designer").hover(
+    function () {
+      $("#name").addClass("grad");
+    },
+    function () {
+      $("#name").removeClass("grad");
+    }
+  );
+});
+
+$(document).ready(function () {
+  $("#developer").hover(
+    function () {
+      $("#name").addClass("greener");
+    },
+    function () {
+      $("#name").removeClass("greener");
+    }
+  );
+});
+
+$(document).ready(function () {
+  $("#doctor").hover(
+    function () {
+      $("#name").addClass("reder");
+    },
+    function () {
+      $("#name").removeClass("reder");
+    }
+  );
+});

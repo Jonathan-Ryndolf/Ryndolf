@@ -32,7 +32,6 @@
   <!-- Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet" />
   <link href="assets/css/penstyle.css" rel="stylesheet" />
-  <link href="assets/css/skill.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -109,12 +108,17 @@
     </div>
   </div>
 
-  <div class="codevisible d-none d-md-block">
+  <div class="codevisible" style="overflow: hidden;">
     <div id="code"></div>
   </div>
+
+  <div class="docvisible" style="overflow: hidden;">
+    <div id="doc"></div>
+  </div>
+
   <section id="hero">
     <div class="hero-container">
-      <h1 class="pb-3">Jonathan <span>Ryndolf</span></h1>
+      <h1 class="pb-3"><div id="name">Jonathan <span>Ryndolf</span></div></h1>
       <h2>
         <span id="doctor" class="badge rounded-pill badgecolor p-2 pl-3 pr-3"
           >Doctor</span

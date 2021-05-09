@@ -409,6 +409,37 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1;
 }
 
+#code:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#doc {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/doc-bg.jpg") top center;
+  clip-path: circle(0% at 45% 50%);
+  transition: clip-path 1s;
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+}
+
+#doc:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
 #hero:before {
   content: "";
   background: rgba(0, 0, 0, 0.6);
@@ -425,12 +456,37 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   right: 0;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
   padding: 0 15px;
+}
+
+.reder {color: rgb(246, 59, 59);}
+
+.greener {color: #00ce1b;}
+
+.grad {
+  background: linear-gradient(to right, #00ff6a, #00d9ff);
+  -webkit-background-clip: text;
+  color: transparent;
+
+  background-size: 300%;
+  background-position: -100%;
+  animation: animatedText 2s infinite alternate-reverse;
+  white-space: nowrap;
+}
+
+@keyframes animatedText {
+  from {
+    background-position: 0%;
+  }
+  to {
+    background-position: 100%;
+  }
 }
 
 #hero h3 {
