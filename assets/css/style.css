@@ -434,7 +434,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero h3 {
-  background: rgba(255, 255, 255, 0.1);
   color: #fff;
   font-size: 26px;
   padding: 10px 30px;
@@ -714,89 +713,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
-
-.services .icon-box .padding-icon {
-  padding-bottom: 50px;
-}
-
-.services .icon-box img {
-  width: 48px;
-  height: 48px;
-}
-
-.services {
-  padding-bottom: 30px;
-}
-
-.services .icon-box {
-  padding: 60px 30px;
-  position: relative;
-  overflow: hidden;
-  background: #fff;
-  box-shadow: 2px 0 35px 0 rgba(68, 88, 144, 0.12);
-  transition: all 0.3s ease-in-out;
-  border-radius: 8px;
-  z-index: 1;
-  text-align: center;
-}
-
-.services .icon-box::before {
-  content: '';
-  position: absolute;
-  background: #d8fbff;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  top: 100%;
-  transition: all 0.4s;
-  z-index: -1;
-}
-
-.services .icon-box:hover::before {
-  background: #00c5db;
-  top: 0;
-  border-radius: 0px;
-}
-
-.services .icon {
-  margin-bottom: 15px;
-}
-
-.services .icon i {
-  font-size: 48px;
-  line-height: 1;
-  color: #00c5db;
-  transition: all 0.3s ease-in-out;
-}
-
-.services .title {
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
-}
-
-.services .title a {
-  color: #111;
-}
-
-.services .description {
-  font-size: 15px;
-  line-height: 28px;
-  margin-bottom: 0;
-}
-
-.services .icon-box:hover .title a, .services .icon-box:hover .description {
-  color: #fff;
-}
-
-.services .icon-box:hover .icon i {
-  color: #fff;
-}
-
-/*--------------------------------------------------------------
-# Features
+# colorcodes
 --------------------------------------------------------------*/
 
 #color1, #color2, #color3, #color4, #color5 {
@@ -804,33 +721,29 @@ section {
   transition: opacity 1s;
 }
 
-.icon-box .padding-icon {
+#colorcodepadding .icon-box .padding-icon {
   padding-right: 10px;
 }
 
-.icon-box .colorbox {
+#colorcodepadding .icon-box .colorbox {
   width: 32px;
   height: 32px;
   border-radius: 10px;
 }
 
-.features {
-  padding-top: 0;
-}
-
-.icon-box {
+#colorcodepadding .icon-box {
   display: flex;
   align-items: center;
   padding-bottom: 20px;
 }
 
-.icon-box i {
+#colorcodepadding .icon-box i {
   font-size: 32px;
   padding-right: 10px;
   line-height: 1;
 }
 
-.icon-box h3 {
+#colorcodepadding .icon-box h3 {
   font-weight: 500;
   margin: 0;
   padding: 0;
@@ -838,10 +751,62 @@ section {
   font-size: 16px;
 }
 
-.icon-box h3 a {
+#colorcodepadding .icon-box h3 a {
   color: #ffffff;
   transition: ease-in-out 0.3s;
 }
+
+/*--------------------------------------------------------------
+# end of colorcodes
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Skills
+--------------------------------------------------------------*/
+
+
+.skills .icon-box .padding-icon {
+  padding: px;
+}
+
+.skills .icon-box img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 20px;
+}
+
+.skills .icon-box {
+  text-align: center;
+  display: block;
+  border-radius: 10px;
+  padding: 30px;
+  padding-bottom: 20px;
+  transition: ease-in-out 0.3s;
+  box-shadow: 2px 0 35px 0 rgba(68, 88, 144, 0.15);
+}
+
+.skills .icon-box:hover {
+  background-color: #00c5db50;
+}
+
+.skills .icon-box i {
+  font-size: 32px;
+}
+
+.skills .icon-box h3 {
+  font-weight: 700;
+  margin-top: 10px;
+  line-height: 1;
+  font-size: 16px;
+}
+
+.skills .icon-box h3 a {
+  color: #493c3e;
+  white-space: nowrap;
+}
+/*--------------------------------------------------------------
+# End of Skills section
+--------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
 # Cta
