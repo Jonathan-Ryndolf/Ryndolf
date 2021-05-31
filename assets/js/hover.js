@@ -45,7 +45,7 @@ $(function () {
 $(function () {
   $("#doctor").hover(
     function () {
-      $("#doc").css("clip-path", "circle(30% at 45% 50%)");
+      $("#doc").css("clip-path", "circle(50% at 45% 50%)");
     },
     function () {
       // on mouseout, reset the background colour
