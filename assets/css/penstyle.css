@@ -12,7 +12,9 @@
   z-index: 1;
 }
 
-.big, .outline, .small {
+.big,
+.outline,
+.small {
   transition: width 0s, height 1s;
 }
 

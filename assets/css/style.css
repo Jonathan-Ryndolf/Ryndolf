@@ -451,6 +451,27 @@ h6 {
   right: 0;
 }
 
+#des {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/design-bgb.jpg") top center;
+  clip-path: circle(0% at 50% 50%);
+  transition: clip-path 1s;
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+}
+
+/* #des:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+} */
+
 #hero:before {
   content: "";
   background: rgba(0, 0, 0, 0.6);
@@ -474,6 +495,7 @@ h6 {
   flex-direction: column;
   text-align: center;
   padding: 0 15px;
+  z-index: 5;
 }
 
 /* .reder {
@@ -485,7 +507,7 @@ h6 {
   text-shadow: 0 0 0.7em #9cff8a;
 } */
 
-.grad {
+.gradd {
   background: linear-gradient(to right, #00ff6a, #00d9ff);
   -webkit-background-clip: text;
   color: transparent;

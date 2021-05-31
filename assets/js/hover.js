@@ -3,7 +3,7 @@ $(function () {
     function () {
       $(".big").css("height", "300px");
       $(".outline").css("height", "285px");
-      $(".outline").css("border", "2px solid #595959");
+      $(".outline").css("border", "2px solid #fff");
       $(".outline").css("background-color", "#00c5db10");
       $(".small").css("opacity", "1");
       $("#color1, #color2, #color3, #color4, #color5").css("opacity", "1");
@@ -50,6 +50,18 @@ $(function () {
     function () {
       // on mouseout, reset the background colour
       $("#doc").css("clip-path", "circle(0% at 45% 50%)");
+    }
+  );
+});
+
+$(function () {
+  $("#deesigner").hover(
+    function () {
+      $("#des").css("clip-path", "circle(30% at 50% 50%)");
+    },
+    function () {
+      // on mouseout, reset the background colour
+      $("#des").css("clip-path", "circle(0% at 50% 50%)");
     }
   );
 });
