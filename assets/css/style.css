@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 @supports (-webkit-mask-image: url(#mask)) or (mask-image: url(#mask)) {
   /* code that requires mask-image here. */
@@ -18,7 +18,7 @@
 --------------------------------------------------------------*/
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: Montserrat;
   color: #444444;
 }
 
@@ -118,6 +118,7 @@ h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Desktop Navigation */
+
 .nav-menu ul {
   margin: 0;
   padding: 0;
@@ -142,12 +143,15 @@ h6 {
   font-size: 15px;
   padding: 0 4px;
   letter-spacing: 0.4px;
-  font-family: "Poppins", sans-serif;
+  font-family: Montserrat;
   transition: all 0.3s ease-in-out 0s;
 }
 
-.nav-menu a:hover {
+.nav-menu a:hover,
+.nav-menu .active > a,
+.nav-menu li:hover > a {
   color: #00c5db;
+  text-decoration: none;
 }
 
 .nav-menu .drop-down ul {
@@ -216,9 +220,15 @@ h6 {
   right: 15px;
 }
 
-.header-scrolled .nav-menu > ul > li > a,
-.header-inner-pages .nav-menu > ul > li > a {
+.header-scrolled .nav-menu a,
+.header-inner-pages .nav-menu a {
   color: #493c3e;
+}
+
+.header-scrolled .nav-menu .active a,
+.header-inner-pages .nav-menu .active a {
+  color: #00c5db;
+  text-decoration: none;
 }
 
 @media (max-width: 1366px) {
@@ -570,7 +580,7 @@ h6 {
 }
 
 #hero .btn-get-started {
-  font-family: "Poppins", sans-serif;
+  font-family: Montserrat;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 13px;
@@ -649,7 +659,7 @@ section {
 .section-title h3 {
   margin: 15px 0 0 0;
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .section-title h3 span {
@@ -708,7 +718,7 @@ section {
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  font-family: Montserrat;
   color: #00c5db;
   margin-bottom: 10px;
 }
@@ -1082,7 +1092,7 @@ section {
   font-size: 42px;
   color: #00c5db;
   font-weight: 500;
-  font-family: "Open Sans", sans-serif;
+  font-family: Montserrat;
   margin-bottom: 20px;
 }
 
