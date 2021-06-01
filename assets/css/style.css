@@ -830,6 +830,21 @@ section {
   fill: red;
 }
 
+.topicon img,
+.boticon img {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+}
+
+.topicon,
+.boticon {
+  text-align: left;
+}
+.boticon {
+  transform: rotate(180deg);
+}
+
 /* This container is needed to position the front and back side */
 .flip-card-inner {
   position: relative;
@@ -868,9 +883,28 @@ section {
 
 /* Style the back side */
 .flip-card-back {
-  background-color: dodgerblue;
-  color: white;
+  background-color: #fff;
+  color: rgb(100, 100, 100);
   transform: rotateY(180deg);
+}
+
+.flip-card h1 {
+  font-weight: 1000;
+  font-size: 25px;
+  color: #00c5db;
+}
+
+.flip-card h2 {
+  color: rgb(27, 27, 27);
+  font-weight: 100;
+  font-size: 13px;
+  margin: 20px;
+}
+
+.flip-card p {
+  font-weight: 100;
+  font-size: 13px;
+  margin: 20px;
 }
 
 /*--------------------------------------------------------------
