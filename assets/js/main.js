@@ -164,6 +164,22 @@
     });
   });
 
+  // Testimonials carousel (uses the Owl Carousel library)
+  $(".events-carousel").owlCarousel({
+    autoplay: true,
+    dots: true,
+    loop: true,
+    items: 1,
+  });
+
+  // Testimonials carousel (uses the Owl Carousel library)
+  $(".testimonials-carousel").owlCarousel({
+    autoplay: true,
+    dots: true,
+    loop: true,
+    items: 1,
+  });
+
   // Toggle .header-scrolled class to #header when page is scrolled
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {

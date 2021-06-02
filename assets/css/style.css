@@ -658,9 +658,10 @@ section {
 }
 
 .section-title h3 {
-  margin: 15px 0 0 0;
-  font-size: 32px;
-  font-weight: 600;
+  visibility: visible !important;
+  margin: 15px 0 0 0 !important;
+  font-size: 32px !important;
+  font-weight: 600 !important;
 }
 
 .section-title h3 span {
@@ -696,78 +697,111 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Experience
+# Testimonials
 --------------------------------------------------------------*/
-
-.brand {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.testimonials {
+  padding: 80px 0;
+  background: url("../img/testimonials-bg-2.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
 }
 
-.circle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.testimonials::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #000000a8;
+}
+
+.testimonials .section-header {
+  margin-bottom: 40px;
+}
+
+.testimonials .testimonial-item {
+  text-align: center;
+  color: #fff;
+}
+
+.testimonials .testimonial-item .testimonial-img {
+  width: 100px;
   border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  border: 6px solid rgba(255, 255, 255, 0.15);
+  margin: 0 auto;
 }
 
-.circle img {
-  width: 200px;
-  height: 200px;
+.testimonials .testimonial-item h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
 }
 
-.content p {
-  padding-bottom: 23px;
-  color: #ffffff;
+.testimonials .testimonial-item h4 {
+  font-size: 14px;
+  color: #ddd;
+  margin: 0 0 15px 0;
+  font-family: "Comic Neue", sans-serif;
 }
 
-/*--------------------------------------------------------------
-# Simera
---------------------------------------------------------------*/
-
-.simera {
-  background-image: linear-gradient(to left, #9e0000, #530000);
+.testimonials .testimonial-item .quote-icon-left,
+.testimonials .testimonial-item .quote-icon-right {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 26px;
 }
 
-.simera h3 {
-  color: #ffffff;
+.testimonials .testimonial-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
 }
 
-.simera .section-title h2 {
-  color: #ffab25;
-  background-color: #490000;
+.testimonials .testimonial-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
 }
 
-.simera .circle {
-  background-color: #ffab256e;
+.testimonials .testimonial-item p {
+  font-style: italic;
+  margin: 0 auto 15px auto;
+  color: #eee;
 }
 
-/*--------------------------------------------------------------
-# Pattarai
---------------------------------------------------------------*/
-
-.pattarai {
-  background-image: linear-gradient(to right, #8300da, #4f00aa);
+.testimonials .owl-nav,
+.testimonials .owl-dots {
+  margin-top: 5px;
+  text-align: center;
 }
 
-.pattarai h3 {
-  color: #ffffff;
+.testimonials .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.4) !important;
 }
 
-.pattarai .section-title h2 {
-  color: #e4b8ff;
-  background-color: #310052;
+.testimonials .owl-dot.active {
+  background-color: #00c5db !important;
 }
 
-.pattarai .circle {
-  background-color: #ffffff36;
+@media (min-width: 1024px) {
+  .testimonials {
+    background-attachment: fixed;
+  }
 }
 
-.pattarai .content {
-  float: right;
+@media (min-width: 992px) {
+  .testimonials .testimonial-item p {
+    width: 80%;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -837,6 +871,11 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+
+.about {
+  margin-bottom: 100px;
+}
+
 .about .content h3 {
   font-weight: 600;
   font-size: 26px;
@@ -943,12 +982,12 @@ section {
   width: 100%;
   height: 100%;
   border: solid;
-  border-width: 2.5px;
+  border-width: 0px;
   border-color: #00c5db;
   border-radius: 15px;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
-  box-shadow: 0px 0px 30px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 30px 0 #00000020;
 }
 
 /* Style the front side (fallback if image is missing) */
@@ -956,11 +995,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(
-    to top right,
-    rgb(185, 224, 231),
-    rgb(223, 246, 246)
-  );
+  background-image: linear-gradient(to top right, #9bf7ff, #d3fbff);
 }
 
 /* Style the back side */
@@ -1052,45 +1087,83 @@ section {
 # Skills
 --------------------------------------------------------------*/
 
-.skills .icon-box .padding-icon {
-  padding: px;
-}
-
 .skills .icon-box img {
   width: 70px;
   height: 70px;
-  margin-bottom: 20px;
+  margin: 20px;
+  transition: ease-in-out 0.3s;
 }
 
 .skills .icon-box {
+  width: fit-content;
+  border-radius: 50%;
+  border: 10px solid #00687a25;
+  margin: 0 auto;
   text-align: center;
   display: block;
-  border-radius: 10px;
-  padding: 30px;
-  padding-bottom: 20px;
   transition: ease-in-out 0.3s;
-  box-shadow: 2px 0 35px 0 rgba(68, 88, 144, 0.15);
+  /* clip-path: circle(48% at 50% 50%); */
+  /* box-shadow: 0px 0 35px 0 rgba(68, 88, 144, 0.15); */
 }
 
 .skills .icon-box:hover {
-  background-color: #00c5db50;
+  border-color: #00d9ff41;
+  transform: scale(1.2);
+  transform-origin: center;
 }
 
-.skills .icon-box i {
+.skills .icon-box:hover:after {
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  content: attr(title);
+  top: 0;
+  left: 0;
+  padding: 15px;
+  font-size: 13px;
+  font-weight: 1000;
+  background-color: #60f2ff;
+  color: #001f22;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills i {
   font-size: 32px;
 }
 
-.skills .icon-box h3 {
+.skills h3 {
+  visibility: hidden;
   font-weight: 700;
   margin-top: 10px;
   line-height: 1;
   font-size: 16px;
 }
 
-.skills .icon-box h3 a {
+.skills h3 a {
   color: #493c3e;
   white-space: nowrap;
 }
+
+.skills .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.design-title h2 {
+  color: #ffffff;
+  background: linear-gradient(to right, #40e0d0, #ff8c00, #ff0080);
+}
+
+.dev-title h2 {
+  color: #09ff00;
+  background-color: #273f27;
+  background: linear-gradient(to left, #102910, #0d530d);
+}
+
 /*--------------------------------------------------------------
 # End of Skills section
 --------------------------------------------------------------*/
