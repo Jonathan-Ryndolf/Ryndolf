@@ -1097,7 +1097,7 @@ section {
 .skills .icon-box {
   width: fit-content;
   border-radius: 50%;
-  border: 10px solid #00687a25;
+  border: 8px solid #00687a25;
   margin: 0 auto;
   text-align: center;
   display: block;
@@ -1153,7 +1153,13 @@ section {
   align-items: center;
 }
 
+.dev-title h2,
 .design-title h2 {
+  color: #00c5db;
+  background-color: #ffffff;
+}
+
+/* .design-title h2 {
   color: #ffffff;
   background: linear-gradient(to right, #40e0d0, #ff8c00, #ff0080);
 }
@@ -1162,7 +1168,7 @@ section {
   color: #09ff00;
   background-color: #273f27;
   background: linear-gradient(to left, #102910, #0d530d);
-}
+} */
 
 /*--------------------------------------------------------------
 # End of Skills section
