@@ -1689,7 +1689,7 @@ section {
 
 .contact .php-email-formm input,
 .contact .php-email-formm textarea {
-  border-radius: 0;
+  border-radius: 20px;
   box-shadow: none;
   font-size: 14px;
 }
@@ -1717,7 +1717,7 @@ section {
 }
 
 .contact .php-email-formm button[type="submit"]:hover {
-  background: #d01d3f;
+  background: #18d26e;
 }
 
 @-webkit-keyframes animate-loading {
