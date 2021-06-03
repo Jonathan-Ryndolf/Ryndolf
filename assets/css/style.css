@@ -1096,16 +1096,62 @@ section {
 --------------------------------------------------------------*/
 
 .skills .icon-box img {
-  width: 70px;
-  height: 70px;
-  margin: 20px;
+  width: 80px;
+  height: 80px;
+  margin: 10px;
   transition: ease-in-out 0.3s;
+}
+
+.skills .blue {
+  background-color: #031c36 !important;
+}
+
+.skills .violet {
+  background-color: #09005b !important;
+}
+
+.skills .orange {
+  background-color: #320101 !important;
+}
+
+.skills .purple {
+  background-color: #470037 !important;
+}
+
+.skills .html {
+  background-color: #ffae9a !important;
+}
+
+.skills .css {
+  background-color: #9a9cff !important;
+}
+
+.skills .js {
+  background-color: #ffc49a !important;
+}
+
+.skills .py {
+  background-color: #add4ff !important;
+}
+
+.skills .bs {
+  background-color: #d4afff !important;
+}
+
+.skills .c4d {
+  background-color: #9b9b9b !important;
+}
+
+.skills .c4d img {
+  width: 100px !important;
+  height: 100px !important;
+  margin: 0px !important;
 }
 
 .skills .icon-box {
   width: fit-content;
   border-radius: 50%;
-  border: 8px solid #00687a25;
+  border: 8px solid #ffffff25;
   margin: 0 auto;
   text-align: center;
   display: block;
@@ -1115,14 +1161,13 @@ section {
 }
 
 .skills .icon-box:hover {
-  border-color: #00d9ff41;
   transform: scale(1.2);
   transform-origin: center;
 }
 
 .skills .icon-box:hover:after {
-  width: 110px;
-  height: 110px;
+  width: 100px;
+  height: 100px;
   position: absolute;
   content: attr(title);
   top: 0;
@@ -1130,8 +1175,8 @@ section {
   padding: 15px;
   font-size: 13px;
   font-weight: 1000;
-  background-color: #60f2ff;
-  color: #001f22;
+  background-color: #000000a6;
+  color: #ffffff;
   border-radius: 50%;
   display: flex;
   justify-content: center;
