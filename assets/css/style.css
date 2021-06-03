@@ -87,6 +87,12 @@ h6 {
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+#header .logo:hover {
+  transform: scale(1.2);
+  transform-origin: center;
 }
 
 #header .logo a {
