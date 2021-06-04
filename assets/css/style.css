@@ -1155,13 +1155,11 @@ section {
 }
 
 .skills .c4d {
-  background-color: #9b9b9b !important;
+  background-color: #b595ff !important;
 }
 
-.skills .c4d img {
-  width: 100px !important;
-  height: 100px !important;
-  margin: 0px !important;
+.skills .non-adobe img {
+  padding: 5px;
 }
 
 .skills .icon-box {
@@ -1180,6 +1178,10 @@ section {
 .skills .icon-box:hover {
   transform: scale(1.2);
   transform-origin: center;
+}
+
+.skills .non-adobe:hover::after {
+  background-color: #000000b7 !important;
 }
 
 .skills .icon-box:hover:after {
