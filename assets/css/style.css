@@ -305,8 +305,6 @@ h6 {
 }
 
 .mobile-nav a {
-  text-transform: uppercase;
-  letter-spacing: 5px;
   font-size: 20px;
   display: block;
   position: relative;
