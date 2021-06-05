@@ -281,6 +281,7 @@ h6 {
 }
 
 .mobile-nav {
+  text-align: center;
   backdrop-filter: blur(20px);
   position: fixed;
   top: 55px;
@@ -304,10 +305,13 @@ h6 {
 }
 
 .mobile-nav a {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
   display: block;
   position: relative;
-  color: #c0c0c0;
-  padding: 10px 20px;
+  color: #8d8c8c;
+  padding: 20px 20px;
   font-weight: 100;
   outline: none;
 }
