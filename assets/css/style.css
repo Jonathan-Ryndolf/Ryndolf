@@ -281,7 +281,7 @@ h6 {
 }
 
 .mobile-nav {
-  text-align: right;
+  text-align: center;
   backdrop-filter: blur(20px);
   position: fixed;
   top: 55px;
