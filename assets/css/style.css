@@ -963,21 +963,19 @@ section {
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
-.flip-card img {
-  width: 100px;
-  height: 100px;
-  fill: red !important;
+.flip-card i {
+  color: #00c5db;
+  font-size: 100px;
 }
 
-.topicon img,
-.boticon img {
-  width: 40px;
-  height: 40px;
-  margin: 8px;
+.topicon i,
+.boticon i {
+  font-size: 40px;
 }
 
 .topicon,
 .boticon {
+  margin: 10px;
   text-align: left;
 }
 .boticon {
@@ -1005,13 +1003,9 @@ section {
   position: absolute;
   width: 100%;
   height: 100%;
-  border: solid;
-  border-width: 0px;
-  border-color: #00c5db;
   border-radius: 15px;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
-  /* box-shadow: 0px 0px 30px 0 #00000020; */
 }
 
 /* Style the front side (fallback if image is missing) */
@@ -1229,8 +1223,8 @@ section {
 
 .dev-title h2,
 .design-title h2 {
-  color: #00c5db;
-  background-color: #ffffff;
+  color: #242424;
+  background-color: #d8d8d8;
 }
 
 /* .design-title h2 {
