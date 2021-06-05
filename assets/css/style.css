@@ -527,26 +527,6 @@ h6 {
   z-index: 5;
 }
 
-/* .reder {
-  color: rgb(246, 59, 59);
-}
-
-.greener {
-  color: #00ce1b;
-  text-shadow: 0 0 0.7em #9cff8a;
-} */
-
-.gradd {
-  background: linear-gradient(to right, #00ff6a, #00d9ff);
-  -webkit-background-clip: text;
-  color: transparent;
-
-  background-size: 300%;
-  background-position: -100%;
-  animation: animatedText 2s infinite alternate-reverse;
-  white-space: nowrap;
-}
-
 @keyframes animatedText {
   from {
     background-position: 0%;
