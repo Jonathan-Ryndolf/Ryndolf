@@ -6,13 +6,6 @@
   /* code that requires mask-image here. */
 }
 
-/**
-* Template Name: Tempo - v2.2.1
-* Template URL: https://bootstrapmade.com/tempo-free-onepage-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -23,6 +16,7 @@ html {
 body {
   font-family: Montserrat;
   color: #444444;
+  /* background-color: #000000; */
 }
 
 .hand {
@@ -1680,7 +1674,6 @@ section {
 
 .contact .php-email-formm {
   width: 100%;
-  background: #fff;
 }
 
 .contact .php-email-formm .form-group {
@@ -1719,7 +1712,6 @@ section {
 
 .contact .php-email-formm .loading {
   display: none;
-  background: #fff;
   text-align: center;
   padding: 15px;
 }
@@ -1742,6 +1734,7 @@ section {
   border-radius: 20px;
   box-shadow: none;
   font-size: 14px;
+  background: transparent;
 }
 
 .contact .php-email-formm input:focus,
