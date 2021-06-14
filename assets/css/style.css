@@ -98,12 +98,10 @@ h6 {
   transform-origin: center;
 }
 
-#header .logo a {
-  color: #fff;
-}
-
 #header .logo img {
+  padding: 2px;
   max-height: 40px;
+  border-radius: 50%;
 }
 
 #header.header-scrolled,
@@ -113,9 +111,9 @@ h6 {
   padding: 12px 0;
 }
 
-#header.header-scrolled .logo a,
-#header.header-inner-pages .logo a {
-  color: #493c3e;
+#header.header-scrolled .logo img,
+#header.header-inner-pages .logo img {
+  background-color: #00000023;
 }
 
 @media (max-width: 992px) {
@@ -560,6 +558,7 @@ h6 {
   margin-bottom: 40px;
   font-size: 24px;
   z-index: 1;
+  white-space: nowrap;
 }
 
 #doctor {
