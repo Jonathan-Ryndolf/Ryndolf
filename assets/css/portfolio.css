@@ -135,3 +135,79 @@
   left: 0;
   right: 0;
 }
+
+.portfolio .eight {
+  margin: 20px;
+  position: relative;
+  clip-path: polygon(1% 1%, 99% 1%, 99% 99%, 1% 99%);
+}
+
+.portfolio .eight:before {
+  content: "";
+  background-image: url("../img/portfolio/8.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(3px) brightness(0.3);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.portfolio .nine {
+  margin: 20px;
+  position: relative;
+  clip-path: polygon(1% 1%, 99% 1%, 99% 99%, 1% 99%);
+}
+
+.portfolio .nine:before {
+  content: "";
+  background-image: url("../img/portfolio/9.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(3px) brightness(0.3);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.portfolio .ten {
+  margin: 20px;
+  position: relative;
+  clip-path: polygon(1% 1%, 99% 1%, 99% 99%, 1% 99%);
+}
+
+.portfolio .ten:before {
+  content: "";
+  background-image: url("../img/portfolio/10.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(3px) brightness(0.3);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.portfolio .eleven {
+  margin: 20px;
+  position: relative;
+  clip-path: polygon(1% 1%, 99% 1%, 99% 99%, 1% 99%);
+}
+
+.portfolio .eleven:before {
+  content: "";
+  background-image: url("../img/portfolio/11.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(3px) brightness(0.3);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
