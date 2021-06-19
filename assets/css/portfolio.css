@@ -1,0 +1,137 @@
+.portfolio .one {
+  margin: 20px;
+  position: relative;
+  clip-path: polygon(1% 1%, 99% 1%, 99% 99%, 1% 99%);
+}
+
+.portfolio .one:before {
+  content: "";
+  background-image: url(../img/portfolio/1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(3px) brightness(0.3);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.portfolio .two {
+  margin: 20px;
+  position: relative;
+  clip-path: polygon(1% 1%, 99% 1%, 99% 99%, 1% 99%);
+}
+
+.portfolio .two:before {
+  content: "";
+  background-image: url(../img/portfolio/2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  filter: blur(3px) brightness(0.3);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.portfolio .three {
+  margin: 20px;
+  position: relative;
+  clip-path: polygon(1% 1%, 99% 1%, 99% 99%, 1% 99%);
+}
+
+.portfolio .three:before {
+  content: "";
+  background-image: url(../img/portfolio/3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(3px) brightness(0.3);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.portfolio .four {
+  margin: 20px;
+  position: relative;
+  clip-path: polygon(1% 1%, 99% 1%, 99% 99%, 1% 99%);
+}
+
+.portfolio .four:before {
+  content: "";
+  background-image: url(../img/portfolio/4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  filter: blur(3px) brightness(0.3);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.portfolio .five {
+  margin: 20px;
+  position: relative;
+  clip-path: polygon(1% 1%, 99% 1%, 99% 99%, 1% 99%);
+}
+
+.portfolio .five:before {
+  content: "";
+  background-image: url(../img/portfolio/5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  filter: blur(3px) brightness(0.3);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.portfolio .six {
+  margin: 20px;
+  position: relative;
+  clip-path: polygon(1% 1%, 99% 1%, 99% 99%, 1% 99%);
+}
+
+.portfolio .six:before {
+  content: "";
+  background-image: url(../img/portfolio/6.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  filter: blur(3px) brightness(0.3);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.portfolio .seven {
+  margin: 20px;
+  position: relative;
+  clip-path: polygon(1% 1%, 99% 1%, 99% 99%, 1% 99%);
+}
+
+.portfolio .seven:before {
+  content: "";
+  background-image: url(../img/portfolio/7.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  filter: blur(3px) brightness(0.3);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
