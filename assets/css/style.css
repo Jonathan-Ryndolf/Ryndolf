@@ -1898,3 +1898,13 @@ section {
   filter: hue-rotate(30deg);
   background-attachment: fixed;
 }
+
+#blog-stuff .btn {
+  background-color: #00c5db;
+  border-style: none;
+  border-radius: 50px;
+}
+
+#blog-stuff .card {
+  border-radius: 20px;
+}
