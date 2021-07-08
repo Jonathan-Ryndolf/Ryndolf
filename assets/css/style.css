@@ -9,6 +9,18 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: #000000;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #00c5db;
+  border-radius: 10px;
+}
+
 html {
   cursor: url("../img/cursor.png"), default;
 }
