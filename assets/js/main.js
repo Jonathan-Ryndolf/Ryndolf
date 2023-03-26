@@ -244,23 +244,40 @@
   });
 })(jQuery);
 
-const platforms = document.querySelector(".platforms .slide-track");
+const platforms = document.querySelectorAll(".platforms .slide-track");
 
-const rollingAnimation = platforms.animate(
-  [{ transform: "translateX(0)" }, { transform: `translateX(${-200 * 13}px)` }],
-  { iterations: Infinity, duration: 80 * 1000 }
+const rollingAnimation = Array.from(platforms).map((items) =>
+  items.animate(
+    [
+      { transform: "translateX(0)" },
+      { transform: `translateX(${-200 * 13}px)` },
+    ],
+    { iterations: Infinity, duration: 80 * 1000 }
+  )
 );
 
-function rollCarousel() {
-  rollingAnimation.play();
-}
+const platforms2 = document.querySelectorAll(".platforms2 .slide-track2");
 
-function pauseCarousel() {
-  rollingAnimation.pause();
-}
+const rollingAnimation2 = Array.from(platforms2).map((items) =>
+  items.animate(
+    [
+      { transform: "translateX(0)" },
+      { transform: `translateX(${200 * 13}px)` },
+    ],
+    { iterations: Infinity, duration: 80 * 1000 }
+  )
+);
 
-platforms.addEventListener("mouseover", pauseCarousel);
-platforms.addEventListener("mouseout", rollCarousel);
+// function rollCarousel() {
+//   rollingAnimation.play();
+// }
+
+// function pauseCarousel() {
+//   rollingAnimation.pause();
+// }
+
+// platforms.addEventListener("mouseover", pauseCarousel);
+// platforms.addEventListener("mouseout", rollCarousel);
 
 if (window.matchMedia("(max-width: 800px)").matches) {
   transform: `translateX(${-150 * 13}px)`;

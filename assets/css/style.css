@@ -833,56 +833,6 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Portfolio
---------------------------------------------------------------*/
-
-/* .portfolio .dark,
-.portfolio .dark:before {
-  background-color: #ffffff;
-}
-
-.portfolio .dark {
-  position: relative;
-  display: grid;
-}
-
-.portfolio .dark:before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 200vw;
-  left: -100vw;
-  z-index: -1;
-} */
-
-.portfolio .row {
-  color: #ffffff;
-}
-
-.portfolio img {
-  width: 80%;
-  border-radius: 20px;
-  border-color: #ffffff;
-  border-style: solid;
-  border-width: 0px;
-  /* box-shadow: 0px 0px 20px #ffffff28; */
-}
-
-.portfolio h1 {
-  font-size: 30px;
-  font-weight: 600;
-}
-
-.portfolio h2 {
-  font-size: 15px;
-  font-weight: 600;
-}
-
-.portfolio h2 span {
-  font-weight: 100;
-}
-
-/*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
 
@@ -1953,6 +1903,54 @@ section {
   padding: 50px;
 }
 
+/*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+
+/* .portfolio .dark,
+.portfolio .dark:before {
+  background-color: #ffffff;
+}
+
+.portfolio .dark {
+  position: relative;
+  display: grid;
+}
+
+.portfolio .dark:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 200vw;
+  left: -100vw;
+  z-index: -1;
+} */
+
+/* .portfolio .row {
+  color: #ffffff;
+} */
+
+.portfolio img {
+  height: 250px;
+  margin-right: 25px;
+  margin-left: 25px;
+  border-radius: 10px;
+}
+
+/* .portfolio h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.portfolio h2 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.portfolio h2 span {
+  font-weight: 100;
+} */
+
 .space {
   height: 400px;
 }
@@ -1968,11 +1966,33 @@ section {
 }
 .platforms .slide-track {
   display: flex;
-  width: calc(200px * 32);
+  width: calc(100px * 32);
   top: 10%;
   position: relative;
 }
-.platforms a.taphover {
+
+.platforms2 {
+  background: transparent;
+  height: 80%;
+  margin: auto;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  direction: rtl;
+}
+.platforms2 .slide-track2 {
+  display: flex;
+  width: calc(100px * 32);
+  top: 10%;
+  position: relative;
+}
+
+.bnw {
+  filter: grayscale(1);
+}
+
+/* .platforms a.taphover {
   height: 100%;
   width: 200px;
   transition: all .5s ease;
@@ -2014,7 +2034,7 @@ section {
 }
 #top:hover h2, #middle:hover h2, #bottom:hover h2 {
   opacity: 1;
-}
+} */
 
 /* Responsive */
 
